@@ -88,21 +88,4 @@ export class ClientesComponent implements OnInit {
     this.modalService.abrirModal();
   }
 
-  download(name: string){
-    var url="http://localhost:8080/api/uploads/img/9167bbc3-546e-454d-89cb-d643a29fc74c_Magda.jpg";
-    $.ajax({
-    type : "GET",
-    data : {
-      id : 5
-    },
-    url : url,
-    success : function(data) {
-      alert("Exito");
-    },
-    error : function(objXMLHttpRequest) {
-      alert("Error");
-    }
-    });
-  }
-
 }
